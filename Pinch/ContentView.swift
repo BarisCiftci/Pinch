@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    // MARK: PROPERTIES
+    
+    // MARK: FUNCTION
+    
+    // MARK: CONTENT
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
+            Image(systemName: "arrow.up")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
             Text("Hello, world!")
@@ -19,8 +26,12 @@ struct ContentView: View {
     }
 }
 
+// MARK: PREVIEW
+
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewDevice("iPhone 14")
+            .preferredColorScheme(.dark)
     }
 }
